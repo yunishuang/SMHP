@@ -67,6 +67,15 @@ body {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+#meBox-title {
+	position: relative;
+	top: -10%;
+	/* background-color: #00931A; */
+	height: 22px;
+    /* width: auto;
+    margin: 0 auto; */
+}
+
 @keyframes typing {
 	from {
 		width: 0;
@@ -79,7 +88,18 @@ body {
 	}
 }
 
+.fg {
+	position: relative;
+	top: -10%;
+    width: 80%;
+    height: 2px;
+    background-image: linear-gradient(to left, #3498db, #2980b9);
+    margin: 5% 0 0 10%;
+}
+
 .meBox-text {
+	position: relative;
+	top: -10%;
 	width: 80%;
 	height: 45%;
 	overflow: hidden;
@@ -113,16 +133,18 @@ body {
 }
 
 .meBox-Button {
+	position: relative;
+	top: -10%;
 	width: 100%;
 }
 
 .meBox-Button a {
 	display: inline-block;
-	float: left;
-	width: 158px;
-	height: 50px;
+	float: center;
+	width: 2.5rem;
+	height: 20px;
 	margin-top: 13px;
-	line-height: 50px;
+	line-height: 25px;
 	text-decoration: none;
 	color: gray;
 	transition: all 0.3s;
@@ -134,7 +156,7 @@ body {
 }
 
 .meBox:hover .meBox-Button a {
-	width: 165px;
+	width: 40px;
 	margin-top: 10px;
 }
 
@@ -291,6 +313,71 @@ body {
 	color: #FFFFFF;
 }
 
+/* 资料卡按钮特效 */
+.meBox .meBox-Button a{
+  position: relative;
+  padding: 10px 30px;
+  margin: 0 20px;
+  color: #21ebff;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  overflow: hidden;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+  background-color: azure;
+}
+.meBox .meBox-Button a:hover{
+  background: #21ebff;
+  color: #111;
+  box-shadow: 0 0 50px #21ebff;
+  transition-delay: 0.5s;
+}
+
+.meBox .meBox-Button a:nth-child(1){
+  filter: hue-rotate(115deg);
+}
+.meBox .meBox-Button a:nth-child(3){
+  filter: hue-rotate(270deg);
+}
+
+.meBox .meBox-Button a::before{
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top:2px solid #21ebff;
+  border-left:2px solid #21ebff;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.meBox .meBox-Button a:hover::before{
+  width: 100%;
+  height: 100%;
+  transition-delay: 0s;
+}
+.meBox .meBox-Button a::after{
+  content: '';
+  position: absolute;
+  right:0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom:2px solid #21ebff;
+  border-right:2px solid #21ebff;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.meBox .meBox-Button a:hover::after{
+  width: 100%;
+  height: 100%;
+  transition-delay: 0s;
+}
+
+
 /* 自适应 */
 @media screen and (max-width: 1250px) {
 	#box {
@@ -325,8 +412,8 @@ body {
 	}
 
 	.meBox:hover .meBox-Button a {
-		width: 158px;
-		height: 50px;
+		width: 40px;
+		height: 20px;
 		margin-top: 13px;
 	}
 
@@ -359,7 +446,7 @@ body {
 	}
 
 	.meBox:hover .meBox-Button a {
-		width: 150px;
+		width: 40px;
 		margin-top: 13px;
 	}
 
@@ -375,7 +462,7 @@ body {
 	}
 
 	.meBox-Button a {
-		width: 150px;
+		width: 40px;
 	}
 
 	#cmdBox {
