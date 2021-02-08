@@ -1,5 +1,6 @@
 # SMHP
-简约的个人主页、个人起始页，自适应**[点我预览](https://sumu31707.gitee.io/smhp/)**
+简约的个人主页、个人起始页，自适应
+**[点我预览](https://sumu31707.gitee.io/smhp/)**
 ![image-20210207221119931](https://gitee.com/SuMu31707/md-img/raw/master/img/blog/image-20210207221119931.png)
 
 ## 简介
